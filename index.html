@@ -8,6 +8,7 @@
         <link rel="manifest" href="manifest.json">
         <link rel="stylesheet" href="estilos.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="shortcut icon" href="img/icon-192x192.png" type="image/x-icon">
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="nav-principal">
@@ -27,6 +28,9 @@
                 <li class="nav-item">
                   <a class="nav-link" href="productos.html">Market Cap</a>
                 </li>
+                <li class="nav-item"  id="CompartirPWA">
+                  <a class="nav-link" href="#">Compartir</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -38,9 +42,9 @@
                     <p>
                         Segui a todas tus criptos favoritas en un solo lugar sin revelar tu identidad.
                     </p>
-                    <a href="productos.html" class="btn-app">Comenzar</a>
+                    <a href="#" class="btn-app" id="instalar">Instalar App</a>
                 </div>
-                <img src="img/home_portfolio.svg" alt="">
+                <img src="img/home_portfolio.svg" alt="gestor de criptomonedas flotando">
             </section>
             <section id="nosotros">
                     <div>
@@ -79,9 +83,12 @@
             </section>
         </main>
         <footer>
-
+          <p>
+            © 2023 Jonathan Abraham Bartoloni | Segundo Parcial | 'Aplicaciones web progresivas' | Diseño y Programación Web | Profesor: Alejandro Lucas Potente 
+          </p>
         </footer>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/codigo.js"></script>
+        <script src="js/registroSW.js"></script>
     </body>
 </html>

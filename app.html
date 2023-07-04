@@ -8,32 +8,37 @@
         <link rel="manifest" href="manifest.json">
         <link rel="stylesheet" href="estilos.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="shortcut icon" href="img/icon-192x192.png" type="image/x-icon">
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="nav-principal">
           <div class="container-fluid">
-            <span>Liobarton</span>
+              <span>Liobarton</span>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link " aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="app.html">Portfolio</a>
+                  <a class="nav-link active" href="app.html">Portfolio</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="productos.html">Market Cap</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Compartir</a>
                 </li>
               </ul>
             </div>
           </div>
         </nav>
         <main class="container">
-          <h1 class="h1">Liobarto PWA</h1>
+            <h1 class="h1">Liobarton PWA</h1>
           <section>
+            <p>Guarda tus criptomonedas para hacer un seguimiento de su rendimiento en el tiempo.</p>
             <form id="anadir" action="#" method="post" onsubmit="return false;">
               <div class="form-group">
                 <label for="crypto-select">Criptomoneda:</label>
@@ -43,7 +48,7 @@
               </div>
               <div class="form-group">
                 <label for="crypto-amount">Cantidad:</label>
-                <input type="number" class="form-control" id="crypto-amount" name="crypto-amount" min="0" placeholder="0">
+                <input type="number" class="form-control" id="crypto-amount" name="crypto-amount" placeholder="0">
               </div>
                 <input type="hidden" class="form-control" id="crypto-value" name="crypto-value">
               <div class="form-group">
@@ -54,12 +59,30 @@
             
             <div id="mis_criptos">
                 <!--aqui se mostraran las las criptomonedas elegidas por el usuario-->
+                <section id="contenedor_criptos">
+                  <table class="tabla_cripto">
+                    <thead>
+                      <tr>
+                        <th class="nombre_tabla">Nombre</th>
+                        <th class="capitalizacion">Inversion inicial</th>
+                        <th class="capitalizacion">Valor actual</th>
+                        <th>Ganancias</th>
+                      </tr>
+                    </thead>
+                    <tbody id="app_listado_cripto">
+                      
+                    </tbody>
+                  </table>
+                  </section>
+                
             </div>
         
           </section>
         </main>
         <footer>
-
+          <p>
+            © 2023 Jonathan Abraham Bartoloni | Segundo Parcial | 'Aplicaciones web progresivas' | Diseño y Programación Web | Profesor: Alejandro Lucas Potente 
+          </p>
         </footer>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/codigo.js"></script>

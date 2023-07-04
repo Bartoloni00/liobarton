@@ -10,13 +10,18 @@ body{
 h1>span{
     color: #57ff22;
 }
+#nav-principal .container-fluid{
+    max-width: 1200px;
+    margin: auto;
+}
 #nav-principal .nav-link{
     color: #fff;
     transition: all 1s;
+    padding: 0.5em 1.2em;
 }
 #nav-principal .nav-link:hover{
     background-color: #57ff22;
-    padding: 0.5em 1.2em;
+
     color: #000;
     border-radius: 50px;
 }
@@ -42,6 +47,10 @@ h1>span{
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
 }
+#instalar,#CompartirPWA{
+    display: none;
+}
+
 #home, #nosotros{
     display: flex;
     justify-content: space-evenly;
@@ -56,7 +65,8 @@ h1>span{
     flex-direction: column;
 }
 #home>img, #nosotros>img{
-    max-height: 70vh;
+    height: 70vh;
+    max-height: 550px;
 }
 #nosotros{
     flex-direction: row-reverse;
@@ -139,6 +149,30 @@ width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+footer{
+    background-color: #212529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em 0;
+    margin-top: 5vh;
+}
+footer p{
+    max-width: 1200px;
+    text-align: center;
+}
+.active{
+    border-bottom: 1px #57ff2277 solid;
+}
+#listado_cripto div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#listado_cripto div img{
+    max-height: 40vh;
 }
 @media screen and (max-width: 992px){
   #home, #nosotros{
