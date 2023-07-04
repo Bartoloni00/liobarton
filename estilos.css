@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+body{
+    background-color: #121212 !important;
+}
+h1>span{
+    color: #57ff22;
+}
+#nav-principal .nav-link{
+    color: #fff;
+    transition: all 1s;
+}
+#nav-principal .nav-link:hover{
+    background-color: #57ff22;
+    padding: 0.5em 1.2em;
+    color: #000;
+    border-radius: 50px;
+}
+#nav-principal>div{
+    margin: 0 10vw;
+}
+.btn-app{
+    background-color: #57ff22;
+    color: #000;
+    font-weight: bolder;
+    padding: .5em;
+    border-radius: 50px;
+    line-height: 100%;
+    text-decoration: none;
+    transition: all 1s;
+    border: none;
+}
+.btn-app span{
+    color: #000;
+}
+.btn-app:hover{
+    border-radius: 3px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+#home, #nosotros{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 95vh;
+}
+#home>div, #nosotros>div{
+    width: 50%;
+}
+#home h1{
+    display: flex;
+    flex-direction: column;
+}
+#home>img, #nosotros>img{
+    max-height: 70vh;
+}
+#nosotros{
+    flex-direction: row-reverse;
+}
+#nosotros h2{
+    color: #57ff22;
+}
+.h1{
+    text-align: center;
+    margin: 10vh !important;
+    color: #57ff22;
+}
+#info{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.tarjeta{
+    width: 33%;
+    padding:2% 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.tarjeta h2{
+    color: #57ff22;
+}
+
+
+.tabla_cripto{
+width: 100%;
+}
+.tabla_cripto tr{
+    display: flex;
+    justify-content: space-between;
+}
+.tabla_cripto tr th,.tabla_cripto tr td{
+    width: 20%;
+    text-align: center;
+}
+.tabla_cripto tr .nombre_tabla {
+    width: 35%;
+  }
+  .tabla_cripto tbody tr .nombre_tabla{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+.tabla_cripto tr td{
+    padding: 1em 0;
+}
+.tabla_cripto tr{
+    border-bottom: 1px solid #212529;
+}
+
+#anadir{
+    background-color: #212529;
+    padding: 2em;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#anadir div{
+    margin: 0 2em;
+}
+#anadir .btn-app{
+    font-size: 1.2em;
+}
+
+#anadir #crypto-select>option{
+    color: #000;
+}
+#anadir .form-group:last-of-type{
+    height: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+@media screen and (max-width: 992px){
+  #home, #nosotros{
+    flex-wrap: wrap-reverse;
+  }
+}
+@media screen and (max-width: 575px){
+    #nav-principal>div{
+        margin: 0;
+    }
+    #home>div, #nosotros>div{
+        width: 100%;
+    }
+    #home>div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #home>div>p{
+        width: 95%;
+        text-align: center;
+    }
+    #home>img, #nosotros>img{
+        width: 100%;
+    }
+    #info .tarjeta{
+        width: 95%;
+    }
+
+    .capitalizacion,.btn-app>span, .nombre_tabla>span{
+        display: none;
+    }
+    #listado_cripto h3{
+        font-size: 1.2em;
+    }
+    #listado_cripto img{
+        height: 25px;
+    }
+    .tabla_cripto tr .nombre_tabla {
+        width: 20%;
+      }
+      .btn-app{
+        font-size: 0.8em;
+      }
+      #anadir{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #anadir div{
+        margin: 2vh 0;
+      }
+}

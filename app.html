@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PWA Liobarton</title>
+        <link rel="manifest" href="manifest.json">
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="nav-principal">
+          <div class="container-fluid">
+            <span>Liobarton</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="app.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="productos.html">Market Cap</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <main class="container">
+          <h1 class="h1">Liobarto PWA</h1>
+          <section>
+            <form id="anadir" action="#" method="post" onsubmit="return false;">
+              <div class="form-group">
+                <label for="crypto-select">Criptomoneda:</label>
+                <select class="form-control" id="crypto-select" name="crypto-select">
+                  <option disabled selected>--Elegir Criptomoneda--</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="crypto-amount">Cantidad:</label>
+                <input type="number" class="form-control" id="crypto-amount" name="crypto-amount" min="0" placeholder="0">
+              </div>
+                <input type="hidden" class="form-control" id="crypto-value" name="crypto-value">
+              <div class="form-group">
+                <button type="submit" class="btn-app" id="anadir-cripto">Guardar</button>
+              </div>
+            </form>
+            
+            
+            <div id="mis_criptos">
+                <!--aqui se mostraran las las criptomonedas elegidas por el usuario-->
+            </div>
+        
+          </section>
+        </main>
+        <footer>
+
+        </footer>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/codigo.js"></script>
+    </body>
+</html>
